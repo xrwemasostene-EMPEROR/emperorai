@@ -1,0 +1,6 @@
+{
+  "name": "Empire AI",
+  "description": "All-in-one advanced AI assistant, Live TV streaming, Rwandan MoMo payment processing, and comprehensive accessibility suite.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

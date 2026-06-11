@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    @apply font-sans bg-[#020306] text-slate-200 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body::selection {
+    background: #6366f1;
+    color: #ffffff;
+  }
+
+  /* Custom scrollbar styling for premium UI feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Screen Reader simulation visual cue overlay class */
+.sr-simulating {
+  outline: 2px solid #6366f1 !important;
+  outline-offset: 2px;
+}
+
+.mesh-bg {
+  background: radial-gradient(circle at 0% 0%, #1a1c2e 0%, transparent 50%),
+              radial-gradient(circle at 100% 100%, #101828 0%, transparent 50%),
+              radial-gradient(circle at 100% 0%, #1e1b4b 0%, transparent 40%),
+              radial-gradient(circle at 0% 100%, #0c0e14 0%, transparent 40%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}
+
+.momo-badge {
+  background: #FFCC00; /* MTN Gold */
+  color: #000;
+}
+
